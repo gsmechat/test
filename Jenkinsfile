@@ -1,15 +1,20 @@
 pipeline {
     agent any
-    environment { 
-        TEST = 'hello world!t'
-    }
+
     stages {
-        stage('Example') {
-            environment { 
-                TEST2 = '-g'
-            }
+        stage('Build') {
             steps {
-                sh 'printenv'
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
             }
         }
     }
