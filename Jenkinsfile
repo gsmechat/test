@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment { 
-        TEST = 'hello world!'
+        TEST = 'hello world!t'
     }
     stages {
         stage('Example') {
