@@ -1,20 +1,9 @@
 pipeline {
-    agent none
-
+    agent { docker 'maven:3.8.1-adoptopenjdk-11' } 
     stages {
-        stage('Build') {
+        stage('Example Build') {
             steps {
-                echo 'Building.. ici'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying.... OK'
+                sh 'mvn -B clean verify'
             }
         }
     }
