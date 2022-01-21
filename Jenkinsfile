@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                libCOMMON.log_info("hello un message ici et la")
+                libCOMMON.log_info "hello un message ici et la"
             }
         }
         stage('Test') {
