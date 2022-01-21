@@ -4,7 +4,7 @@ log.info 'Starting'
 log.warning 'Nothing to do! '
 
 pipeline {
-    agent agent1
+    agent { label 'agent1' }
     
     stages {
         stage('Build') {
