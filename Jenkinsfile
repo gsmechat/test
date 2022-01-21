@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo libCOMMON.log("hello un message ici et la")
+                libCOMMON.log("hello un message ici et la")
             }
         }
         stage('Test') {
