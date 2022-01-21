@@ -6,7 +6,7 @@ log.warning 'Nothing to do! '
 pipeline {
     agent {
         node {
-            label 'agent'
+            label 'agent1'
         }
     }
     
