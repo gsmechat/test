@@ -1,5 +1,8 @@
 @Library('testlib') _
 
+log.info 'Starting'
+log.warning 'Nothing to do!'
+
 pipeline {
     agent none
     
