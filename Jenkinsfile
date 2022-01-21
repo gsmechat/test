@@ -10,10 +10,8 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    def dur= time.duration
                     log.info 'Guillaume Starting'
                     log.warning 'Guillaume Nothing to do!'
-                    log.info dur
                 }
                 log_info "hello un message ici et la"
             }
