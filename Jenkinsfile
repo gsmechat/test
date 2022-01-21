@@ -4,10 +4,11 @@ log.info 'Starting'
 log.warning 'Nothing to do! '
 
 pipeline {
-    agent { docker 'maven:3.8.1-adoptopenjdk-11' }
+    agent none
     
     stages {
         stage('Build') {
+            agent { docker 'maven:3.8.1-adoptopenjdk-11' }
             steps {
                 script {
                     def dur = time.duration()
