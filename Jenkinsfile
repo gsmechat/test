@@ -9,7 +9,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                log.info 'Guillaume'
+                script { 
+                    log.info 'Guillaume Starting'
+                    log.warning 'Guillaume Nothing to do!'
+                }
                 log_info "hello un message ici et la"
             }
         }
