@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     def dur = time.duration()
-                    log.info 'Guillaume Starting '
+                    log.info 'Guillaume Starting'
                     log.warning 'Guillaume Nothing to do!'
                     //log.info "${dur}"
                     def browsers = ['chrome', 'firefox']
