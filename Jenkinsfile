@@ -1,6 +1,4 @@
-libraries {
-    lib('testlib')
-}
+@Library('testlib') _
 
 pipeline {
     agent none
@@ -8,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                log_info("hello un message ici et la")
+                log_info "hello un message ici et la"
             }
         }
         stage('Test') {
