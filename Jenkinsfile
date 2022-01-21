@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    time.duration {}
+                    time.duration()
                     log.info 'Guillaume Starting'
                     log.warning 'Guillaume Nothing to do!'
                 }
