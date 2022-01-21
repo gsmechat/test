@@ -1,6 +1,9 @@
+libraries {
+    lib('testlib')
+}
+
 pipeline {
     agent none
-    @Library('testlib') _
     
     stages {
         stage('Build') {
