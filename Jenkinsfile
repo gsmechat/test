@@ -1,4 +1,4 @@
-@Library ( value = ' testlib ' , changelog = false ) _
+@Library ('testlib ') _
 
 log.info 'Starting'
 log.warning 'Nothing to do! '
