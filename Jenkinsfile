@@ -9,6 +9,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                log.info 'Guillaume'
                 log_info "hello un message ici et la"
             }
         }
