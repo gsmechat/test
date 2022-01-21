@@ -12,7 +12,7 @@ pipeline {
                 script {
                     def dur = time.duration()
                     log.info 'Guillaume Starting'
-                    log.warning 'Guillaume Nothing to do!'
+                    log.warning 'Guillaume Nothing to do !'
                     //log.info "${dur}"
                     def browsers = ['chrome', 'firefox']
                     for (int i = 0; i < browsers.size(); ++i) {
