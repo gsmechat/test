@@ -4,11 +4,7 @@ log.info 'Starting'
 log.warning 'Nothing to do! '
 
 pipeline {
-    agent {
-        node {
-            label 'agent1'
-        }
-    }
+    agent { docker 'maven:3.8.1-adoptopenjdk-11' }
     
     stages {
         stage('Build') {
