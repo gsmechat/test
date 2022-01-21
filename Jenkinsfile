@@ -1,11 +1,11 @@
 pipeline {
     agent none
-    @Library('testlib')_
+    @Library('testlib') _
     
     stages {
         stage('Build') {
             steps {
-                echo 'Building.. ici'
+                echo libCOMMON.log("hello un message ici et la")
             }
         }
         stage('Test') {
